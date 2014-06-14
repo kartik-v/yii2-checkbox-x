@@ -58,7 +58,7 @@ to the ```require``` section of your `composer.json` file.
 ### CheckboxX
 
 ```php
-use kartik\dropdown\CheckboxX;
+use kartik\checkbox\CheckboxX;
 echo CheckboxX::widget([
     'model' => $model,
     'attribute' => 'status',
