@@ -26,8 +26,6 @@ class CheckboxX extends InputWidget
 
     /**
      * Initializes the widget
-     *
-     * @throw InvalidConfigException
      */
     public function init()
     {
