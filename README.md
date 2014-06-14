@@ -1,7 +1,7 @@
 yii2-checkbox-x
 =================
 
-An extended checkbox widget for Yii Framework 2 based on the [bootstrap-checkbox-x plugin](http://plugins.krajee.com/checkbox-x) by Krajee. This widget 
+An extended checkbox widget for Yii Framework 2 based on the [bootstrap-checkbox-x jQuery plugin](http://plugins.krajee.com/checkbox-x) by Krajee. This widget 
 allows three checkbox states and includes additional styles. The plugin uses Bootstrap markup, glyphs, and CSS 3 styling by default, but it can be overridden 
 with any other markup.
 
