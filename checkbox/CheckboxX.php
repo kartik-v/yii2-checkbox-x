@@ -31,7 +31,9 @@ class CheckboxX extends InputWidget
     {
         parent::init();
         $this->registerAssets();
-        Html::addCssClass($this->options, 'cbx-loading');
+        if ($this->pluginLoading) {
+            Html::addCssClass($this->options, 'cbx-loading');
+        }
         echo $this->getInput('textInput');
     }
 
