@@ -8,8 +8,8 @@ with any other markup.
 ## Features  
 
 - The plugin offers the following three states and values for the checkboxes:
-   - `1` or `true`: Checkbox is checked.
-   - `0` or `false`: Checkbox is unchecked.
+   - `1`: Checkbox is checked.
+   - `0`: Checkbox is unchecked.
    - `null`: Checkbox is indeterminate.
 - You can set the plugin to allow **three states** or the default **two states** for the checkbox.
 - Specifically uses Bootstrap 3.x styles & glyphs. One can configure the checked, unchecked, and indeterminate icons to be shown for the checkboxes.
