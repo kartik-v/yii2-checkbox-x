@@ -14,7 +14,7 @@
     ],
     "require": {
         "kartik-v/yii2-widgets": "*",
-        "kartik-v/yii2-checkbox-x": "*"
+        "kartik-v/bootstrap-checkbox-x": "*"
     },
     "autoload": {
         "psr-4": {
