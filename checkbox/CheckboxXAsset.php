@@ -9,6 +9,7 @@
 namespace kartik\checkbox;
 
 use Yii;
+use kartik\widgets\AssetBundle;
 
 /**
  * Asset bundle for CheckboxX widget. Includes assets from

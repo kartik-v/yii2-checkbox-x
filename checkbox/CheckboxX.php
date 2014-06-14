@@ -10,10 +10,7 @@ namespace kartik\checkbox;
 
 use Yii;
 use yii\helpers\Html;
-use yii\helpers\ArrayHelper;
-use yii\base\InvalidConfigException;
-use yii\web\View;
-use yii\web\JsExpression;
+use kartik\widgets\InputWidget;
 
 /**
  * An extended checkbox widget for Yii Framework 2 based on the bootstrap-checkbox-x plugin
