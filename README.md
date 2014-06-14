@@ -5,7 +5,7 @@ An extended checkbox widget for Yii Framework 2 based on the [bootstrap-checkbox
 allows three checkbox states and includes additional styles. The plugin uses Bootstrap markup, glyphs, and CSS 3 styling by default, but it can be overridden 
 with any other markup.
 
-> NOTE: The checkbox control stores the values as integer format (and not boolean format) for checked and unchecked states.
+> NOTE: The checkbox plugin stores the values as integer format (and not boolean format) for checked and unchecked states.
 
 ## Features  
 
