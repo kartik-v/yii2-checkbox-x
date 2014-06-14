@@ -33,7 +33,7 @@ may be updated when you install or update this extension. You may need to lock y
 for extension break if you do not wish to auto update dependencies.
 
 ### Demo
-You can see detailed [documentation](http://demos.krajee.com/checkbox-x) on usage of the extension.
+You can see detailed [documentation and examples](http://demos.krajee.com/checkbox-x) on usage of the extension.
 
 ## Installation
 
@@ -63,6 +63,7 @@ echo CheckboxX::widget([
     'model' => $model,
     'attribute' => 'status',
     'pluginOptions' => [
+        'threeState' => true,
         'size' => 'lg'
     ]
 ]); 
