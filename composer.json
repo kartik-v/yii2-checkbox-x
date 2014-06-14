@@ -2,7 +2,7 @@
     "name": "kartik-v/yii2-checkbox-x",
     "description": "Extended checkbox widget for bootstrap with three states and additional styles.",
     "keywords": ["bootstrap", "checkbox", "jquery", "three", "state", "indeterminate", "null"],
-    "homepage": "https://github.com/kartik-v/yii2-dropdown-x",
+    "homepage": "https://github.com/kartik-v/yii2-checkbox-x",
     "type": "yii2-extension",
     "license": "BSD 3-Clause",
     "authors": [
