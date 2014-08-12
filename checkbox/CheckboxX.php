@@ -42,7 +42,7 @@ class CheckboxX extends InputWidget
      */
     public function registerAssets()
     {
-        $id = '$("#' . $this->options['id'] . '")';
+        $id = 'jQuery("#' . $this->options['id'] . '")';
         $view = $this->getView();
         CheckboxXAsset::register($view);
         $this->registerPlugin('checkboxX');
