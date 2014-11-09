@@ -9,7 +9,6 @@
 namespace kartik\checkbox;
 
 use Yii;
-use kartik\widgets\AssetBundle;
 
 /**
  * Asset bundle for CheckboxX widget. Includes assets from
@@ -20,7 +19,7 @@ use kartik\widgets\AssetBundle;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class CheckboxXAsset extends AssetBundle
+class CheckboxXAsset extends \kartik\base\AssetBundle
 {
 
     public function init()

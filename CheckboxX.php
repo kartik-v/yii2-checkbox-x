@@ -10,7 +10,6 @@ namespace kartik\checkbox;
 
 use Yii;
 use yii\helpers\Html;
-use kartik\widgets\InputWidget;
 
 /**
  * An extended checkbox widget for Yii Framework 2 based on the bootstrap-checkbox-x plugin
@@ -21,7 +20,7 @@ use kartik\widgets\InputWidget;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class CheckboxX extends InputWidget
+class CheckboxX extends \kartik\base\InputWidget
 {
 
     /**
