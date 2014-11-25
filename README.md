@@ -30,6 +30,9 @@ with any other markup.
 ### Demo
 You can see detailed [documentation and examples](http://demos.krajee.com/checkbox-x) on usage of the extension.
 
+### Latest Release
+The latest version of the extension is release v1.1.0. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-checkbox-x/blob/master/CHANGE.md) for details of various releases.
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).

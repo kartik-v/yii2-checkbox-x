@@ -3,7 +3,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
  * @package yii2-checkbox-x
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 namespace kartik\checkbox;
@@ -22,7 +22,11 @@ use yii\helpers\Html;
  */
 class CheckboxX extends \kartik\base\InputWidget
 {
-
+    /**
+     * @inherit doc
+     */
+    protected $_pluginName = 'checkboxX';
+    
     /**
      * Initializes the widget
      */
@@ -44,7 +48,7 @@ class CheckboxX extends \kartik\base\InputWidget
         $id = 'jQuery("#' . $this->options['id'] . '")';
         $view = $this->getView();
         CheckboxXAsset::register($view);
-        $this->registerPlugin('checkboxX');
+        $this->registerPlugin($this->_pluginName);
     }
 
 }
