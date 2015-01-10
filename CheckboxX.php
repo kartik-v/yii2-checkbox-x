@@ -1,9 +1,10 @@
 <?php
 
 /**
+ * @package   yii2-checkbox-x
+ * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
- * @package yii2-checkbox-x
- * @version 1.1.0
+ * @version   1.2.0
  */
 
 namespace kartik\checkbox;
@@ -13,7 +14,7 @@ use yii\helpers\Html;
 
 /**
  * An extended checkbox widget for Yii Framework 2 based on the bootstrap-checkbox-x plugin
- * by Krajee. This widget allows three checkbox states and includes additional styles. 
+ * by Krajee. This widget allows three checkbox states and includes additional styles.
  *
  * @see http://plugins.krajee.com/checkbox-x
  * @see http://github.com/kartik-v/bootstrap-checkbox-x
@@ -23,12 +24,12 @@ use yii\helpers\Html;
 class CheckboxX extends \kartik\base\InputWidget
 {
     /**
-     * @inherit doc
+     * @inheritdoc
      */
     protected $_pluginName = 'checkboxX';
-    
+
     /**
-     * Initializes the widget
+     * @inheritdoc
      */
     public function init()
     {
@@ -42,6 +43,8 @@ class CheckboxX extends \kartik\base\InputWidget
 
     /**
      * Registers the needed assets
+     *
+     * @return void
      */
     public function registerAssets()
     {

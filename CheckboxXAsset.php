@@ -1,9 +1,10 @@
 <?php
 
 /**
+ * @package   yii2-checkbox-x
+ * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
- * @package yii2-checkbox-x
- * @version 1.1.0
+ * @version   1.2.0
  */
 
 namespace kartik\checkbox;
@@ -21,7 +22,9 @@ use Yii;
  */
 class CheckboxXAsset extends \kartik\base\AssetBundle
 {
-
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $this->setSourcePath('@vendor/kartik-v/bootstrap-checkbox-x');

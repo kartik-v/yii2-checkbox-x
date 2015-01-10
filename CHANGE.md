@@ -1,3 +1,9 @@
+version 1.2.0
+=============
+**Date**: 10-Jan-2015
+
+- Code formatting updates as per Yii2 coding style.
+
 version 1.1.0
 =============
 **Date**: 25-Nov-2014
