@@ -23,11 +23,22 @@ use yii\helpers\Html;
  */
 class CheckboxX extends \kartik\base\InputWidget
 {
+    const INPUT_TEXT = 'textInput';
+    const INPUT_CHECKBOX = 'checkbox';
+
+    /**
+     * @var string initialization input type. Note, the widget by default
+     * uses a text input to initialize the plugin instead of checkbox for
+     * better label styling, alignment and using templates within ActiveField.
+     * Can be one of CheckboxX::INPUT_TEXT or CheckboxX::INPUT_CHECKBOX.
+     */
+    public $initInputType = self::INPUT_TEXT;
+    
     /**
      * @inheritdoc
      */
     protected $_pluginName = 'checkboxX';
-
+    
     /**
      * @inheritdoc
      */
@@ -38,7 +49,7 @@ class CheckboxX extends \kartik\base\InputWidget
         if ($this->pluginLoading) {
             Html::addCssClass($this->options, 'cbx-loading');
         }
-        echo $this->getInput('textInput');
+        echo $this->getInput($this->initInputType);
     }
 
     /**

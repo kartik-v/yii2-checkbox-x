@@ -1,8 +1,9 @@
 version 1.2.0
 =============
-**Date**: 10-Jan-2015
+**Date**: 01-Apr-2015
 
 - Code formatting updates as per Yii2 coding style.
+- (enh #7): New initInputType property to set input type for initializing bootstrap-checkbox-x plugin.
 
 version 1.1.0
 =============
