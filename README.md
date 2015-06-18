@@ -37,7 +37,7 @@ with any other markup.
 You can see detailed [documentation and examples](http://demos.krajee.com/checkbox-x) on usage of the extension.
 
 ### Latest Release
-The latest version of the extension is release v1.1.0. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-checkbox-x/blob/master/CHANGE.md) for details of various releases.
+The latest version of the extension is release v1.0.1. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-checkbox-x/blob/master/CHANGE.md) for details of various releases.
 
 ## Installation
 
@@ -48,13 +48,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-$ php composer.phar require kartik-v/yii2-checkbox-x "dev-master"
+$ php composer.phar require kartik-v/yii2-checkbox-x "@dev"
 ```
 
 or add
 
 ```
-"kartik-v/yii2-checkbox-x": "dev-master"
+"kartik-v/yii2-checkbox-x": "@dev"
 ```
 
 to the ```require``` section of your `composer.json` file.

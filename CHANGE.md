@@ -1,6 +1,6 @@
 version 1.0.1
 =============
-**Date**: 01-Apr-2015
+**Date**: 17-Jun-2015
 
 - Set release to stable
 - Code formatting updates as per Yii2 coding style.

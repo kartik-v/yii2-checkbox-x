@@ -3,8 +3,8 @@
 /**
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
- * @version   1.2.0
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
+ * @version   1.0.1
  */
 
 namespace kartik\checkbox;
