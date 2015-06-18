@@ -15,7 +15,7 @@ with any other markup.
 
 ## Features  
 
-- The plugin offers the following three states and values for the checkboxes:
+- The plugin offers the following three states and values for the checkboxes (note the integer values):
    - `1`: Checkbox is checked.
    - `0`: Checkbox is unchecked.
    - `null`: Checkbox is indeterminate.
