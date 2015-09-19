@@ -93,7 +93,7 @@ class CheckboxX extends \kartik\base\InputWidget
      */
     public function initMarkup()
     {
-        if (!$this->autoLabel || (!$this->hasModel() && empty($this->labelSettings['label']))) {
+        if (empty($this->labelSettings['label']) && !$this->hasModel() && !$this->autoLabel) {
             echo $this->getInput($this->initInputType);
             return;
         }
@@ -107,7 +107,7 @@ class CheckboxX extends \kartik\base\InputWidget
         ) {
             Html::addCssClass($options, 'disabled');
         }
-        $label = $this->hasModel() ?
+        $label = $this->hasModel() && empty($label) ?
             Html::activeLabel($this->model, $this->attribute, $options) :
             Html::label($label, $this->options['id'], $options);
         if ($this->initInputType !== self::INPUT_TEXT) {
