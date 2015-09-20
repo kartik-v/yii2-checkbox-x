@@ -1,3 +1,10 @@
+version 1.0.2
+=============
+**Date**: 20-Sep-2015
+
+- Better label generation.
+- Add support for theme.
+
 version 1.0.1
 =============
 **Date**: 17-Jun-2015

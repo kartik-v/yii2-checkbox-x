@@ -4,7 +4,7 @@
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
- * @version   1.0.1
+ * @version   1.0.2
  */
 
 namespace kartik\checkbox;
@@ -127,6 +127,9 @@ class CheckboxX extends \kartik\base\InputWidget
         $id = 'jQuery("#' . $this->options['id'] . '")';
         $view = $this->getView();
         CheckboxXAsset::register($view);
+        if (!empty($this->pluginOptions['theme']) && $this->pluginOptions['theme'] === 'krajee-flatblue') {
+            KrajeeFlatBlueThemeAsset::register($view);
+        }
         $this->registerPlugin($this->_pluginName);
     }
 
