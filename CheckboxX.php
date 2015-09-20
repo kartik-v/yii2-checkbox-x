@@ -4,7 +4,7 @@
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
- * @version   1.0.2
+ * @version   1.0.1
  */
 
 namespace kartik\checkbox;
@@ -93,7 +93,7 @@ class CheckboxX extends \kartik\base\InputWidget
      */
     public function initMarkup()
     {
-        if (empty($this->labelSettings['label']) && !$this->hasModel() && !$this->autoLabel) {
+        if (empty($this->labelSettings['label']) && !$this->autoLabel) {
             echo $this->getInput($this->initInputType);
             return;
         }
