@@ -1,12 +1,15 @@
-version 1.0.2
-=============
+Change Log: `yii2-checkbox-x`
+=============================
+
+## Version 1.0.2
+
 **Date**: 20-Sep-2015
 
 - Better label generation.
 - Add support for theme.
 
-version 1.0.1
-=============
+## Version 1.0.1
+
 **Date**: 17-Jun-2015
 
 - Set release to stable
@@ -15,10 +18,10 @@ version 1.0.1
 - (enh #7): New `initInputType` property to set input type for initializing bootstrap-checkbox-x plugin.
 - (enh #8): New `autoLabel` property to allow automatic configuration of label text, styles, and positions.
 - (enh #9): New `labelSettings` property to allow configuring checkbox labels better.
-- (enh #10): Set composer version dependencies.
+- (enh #10): Set composer ## Version dependencies.
 
-version 1.0.0
-=============
+## Version 1.0.0
+
 **Date**: 09-Nov-2014
 
 - Initial release
