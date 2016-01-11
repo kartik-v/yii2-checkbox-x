@@ -3,8 +3,8 @@
 /**
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
- * @version   1.0.1
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
+ * @version   1.0.3
  */
 
 namespace kartik\checkbox;
@@ -13,6 +13,7 @@ use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
+use kartik\base\InputWidget;
 
 /**
  * An extended checkbox widget for Yii Framework 2 based on the bootstrap-checkbox-x plugin
@@ -23,7 +24,7 @@ use yii\helpers\ArrayHelper;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class CheckboxX extends \kartik\base\InputWidget
+class CheckboxX extends InputWidget
 {
     const INPUT_TEXT = 'textInput';
     const INPUT_CHECKBOX = 'checkbox';
@@ -58,7 +59,7 @@ class CheckboxX extends \kartik\base\InputWidget
     public $autoLabel = false;
 
     /**
-     * @var the settings for the label. The following properties are recognized
+     * @var array the settings for the label. The following properties are recognized
      * - `label`: string, the label to be used. When using with model, this will be automatically generated
      *   if not set.
      * - `position`: string, the position of the label with respect to the checkbox. Must be one of
@@ -70,7 +71,7 @@ class CheckboxX extends \kartik\base\InputWidget
     /**
      * @inheritdoc
      */
-    protected $_pluginName = 'checkboxX';
+    public $pluginName = 'checkboxX';
 
     /**
      * @inheritdoc
@@ -124,13 +125,11 @@ class CheckboxX extends \kartik\base\InputWidget
      */
     public function registerAssets()
     {
-        $id = 'jQuery("#' . $this->options['id'] . '")';
         $view = $this->getView();
         CheckboxXAsset::register($view);
         if (!empty($this->pluginOptions['theme']) && $this->pluginOptions['theme'] === 'krajee-flatblue') {
             KrajeeFlatBlueThemeAsset::register($view);
         }
-        $this->registerPlugin($this->_pluginName);
+        $this->registerPlugin($this->pluginName);
     }
-
 }

@@ -3,13 +3,14 @@
 /**
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
- * @version   1.0.2
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
+ * @version   1.0.3
  */
 
 namespace kartik\checkbox;
 
 use Yii;
+use kartik\base\AssetBundle;
 
 /**
  * Asset bundle for CheckboxX Theme. Includes assets from
@@ -20,7 +21,7 @@ use Yii;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class KrajeeFlatBlueThemeAsset extends \kartik\base\AssetBundle
+class KrajeeFlatBlueThemeAsset extends AssetBundle
 {
     /**
      * @inheritdoc

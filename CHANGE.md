@@ -1,5 +1,10 @@
 Change Log: `yii2-checkbox-x`
 =============================
+## Version 1.0.3
+
+**Date**: 11-Jan-2016
+
+- (enh #14): Enhancements for PJAX based reinitialization. Complements enhancements in kartik-v/yii2-krajee-base#52 and kartik-v/yii2-krajee-base#53.
 
 ## Version 1.0.2
 
