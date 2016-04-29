@@ -13,7 +13,7 @@ use Yii;
 use kartik\base\AssetBundle;
 
 /**
- * Asset bundle for CheckboxX Theme. Includes assets from
+ * Asset bundle for CheckboxX widget. Includes assets from
  * bootstrap-checkbox-x plugin by Krajee.
  *
  * @see http://plugins.krajee.com/checkbox-x
@@ -21,16 +21,16 @@ use kartik\base\AssetBundle;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class KrajeeFlatBlueThemeAsset extends AssetBundle
+class CheckboxXAsset extends AssetBundle
 {
     /**
      * @inheritdoc
      */
     public function init()
     {
-        $this->depends = array_merge($this->depends, ['kartik\checkbox\CheckboxXAsset']);
         $this->setSourcePath('@vendor/kartik-v/bootstrap-checkbox-x');
-        $this->setupAssets('css', ['css/theme-krajee-flatblue']);
+        $this->setupAssets('css', ['css/checkbox-x']);
+        $this->setupAssets('js', ['js/checkbox-x']);
         parent::init();
     }
 }
