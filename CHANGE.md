@@ -1,5 +1,14 @@
 Change Log: `yii2-checkbox-x`
 =============================
+
+## Version 1.0.4
+
+**Date**: 26-Nov-2016
+
+- Add github contribution and issue/PR logging templates.
+- Enhance PHP Documentation for all classes and methods in the extension.
+- Add branch alias for dev-master latest release.
+
 ## Version 1.0.3
 
 **Date**: 11-Jan-2016

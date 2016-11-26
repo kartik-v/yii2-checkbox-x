@@ -4,7 +4,7 @@
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
- * @version   1.0.3
+ * @version   1.0.4
  */
 
 namespace kartik\checkbox;
@@ -16,42 +16,68 @@ use yii\helpers\ArrayHelper;
 use kartik\base\InputWidget;
 
 /**
- * An extended checkbox widget for Yii Framework 2 based on the bootstrap-checkbox-x plugin
- * by Krajee. This widget allows three checkbox states and includes additional styles.
+ * CheckboxX is an extended checkbox widget for Yii Framework 2 based on the
+ * [bootstrap-checkbox-x](http://plugins.krajee.com/checkbox-x) plugin by Krajee.
+ * This widget allows three checkbox states and includes additional styles.
+ *
+ * Usage example:
+ *
+ * ~~~
+ * use kartik\checkbox\CheckboxX;
+ * echo CheckboxX::widget([
+ *     'model' => $model,
+ *     'attribute' => 'status',
+ *     'pluginOptions' => [
+ *         'threeState' => true,
+ *         'size' => 'lg'
+ *     ]
+ * ]);
+ * ~~~
  *
  * @see http://plugins.krajee.com/checkbox-x
  * @see http://github.com/kartik-v/bootstrap-checkbox-x
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
+
 class CheckboxX extends InputWidget
 {
+    /**
+     * Text input type
+     */
     const INPUT_TEXT = 'textInput';
+    /**
+     * Checkbox input type
+     */
     const INPUT_CHECKBOX = 'checkbox';
+    /**
+     * Position label to the left of the checkbox
+     */
     const LABEL_LEFT = 'left';
+    /**
+     * Position label to the right of the checkbox
+     */
     const LABEL_RIGHT = 'right';
 
     /**
-     * @var string initialization input type. Note, the widget by default
-     * uses a text input to initialize the plugin instead of checkbox for
-     * better label styling, alignment and using templates within ActiveField.
-     * Can be one of `CheckboxX::INPUT_TEXT` or `CheckboxX::INPUT_CHECKBOX`.
+     * @var string initialization input type. Note, the widget by default uses a text input to initialize the plugin
+     * instead of checkbox for better label styling, alignment and using templates within ActiveField. Can be one of
+     * [[INPUT_TEXT]] or [[INPUT_CHECKBOX]]. Defaults to [[INPUT_TEXT]].
      */
     public $initInputType = self::INPUT_TEXT;
 
     /**
-     * @var bool automatically generate, style, and position labels with respect to
-     * the checkbox x. If this is `true`, the labels will automatically be positioned
-     * and styled based on label settings. When this is set to `true` and you have set
-     * the `model` and `attribute`, the label will be automatically generated. If you are
-     * not using this with a model, then  you must set the property `labelSettings['label']`
-     * for automatic label styling to work.
-     * NOTE:
-     * If this is `true`, and you are using the widget within yii ActiveField, then
-     * you must disable the active field label generation to avoid duplicate labels.
-     * For example:
-     * ```
-     * $form->field($model, 'attr')->widget(CheckboxX::classname(), [
+     * @var boolean automatically generate, style, and position labels with respect to the checkbox x. If this is
+     * `true`, the labels will automatically be positioned and styled based on label settings. When this is set to
+     * `true` and you have set the `model` and `attribute`, the label will be automatically generated. If you are not
+     * using this with a model, then  you must set the property `labelSettings['label']` for automatic label styling
+     * to work.
+     *
+     * NOTE: If this is `true`, and you are using the widget within yii ActiveField, then you must disable the active
+     * field label generation to avoid duplicate labels. For example:
+     *
+     * ```php
+     * echo $form->field($model, 'attr')->widget(CheckboxX::classname(), [
      *      'autoLabel'=>true
      * ])->label(false);
      * ```
@@ -60,11 +86,11 @@ class CheckboxX extends InputWidget
 
     /**
      * @var array the settings for the label. The following properties are recognized
-     * - `label`: string, the label to be used. When using with model, this will be automatically generated
+     * - `label`: _string_, the label to be used. When using with model, this will be automatically generated
      *   if not set.
-     * - `position`: string, the position of the label with respect to the checkbox. Must be one of
-     *   `CheckboxX::LABEL_LEFT` or `CheckboxX::LABEL_RIGHT`. Defaults to `CheckboxX::LABEL_RIGHT` if not set.
-     * - `options`: array, the HTML attributes for the label.
+     * - `position`: _string_, the position of the label with respect to the checkbox. Must be one of[[LABEL_LEFT]] or
+     *   [[LABEL_RIGHT]]. Defaults to [[LABEL_RIGHT]] if not set.
+     * - `options`: _array_, the HTML attributes for the label.
      */
     public $labelSettings = [];
 
@@ -90,7 +116,7 @@ class CheckboxX extends InputWidget
     }
 
     /**
-     * Initializes markup & styling for checkbox, label, and parses label positions
+     * Initializes markup & styling for checkbox, label, and parses label positions.
      */
     public function initMarkup()
     {
@@ -119,9 +145,7 @@ class CheckboxX extends InputWidget
     }
 
     /**
-     * Registers the needed assets
-     *
-     * @return void
+     * Registers the client assets for the [[CheckboxX]] widget.
      */
     public function registerAssets()
     {

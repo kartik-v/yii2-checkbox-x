@@ -4,7 +4,7 @@
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
- * @version   1.0.3
+ * @version   1.0.4
  */
 
 namespace kartik\checkbox;
@@ -13,8 +13,8 @@ use Yii;
 use kartik\base\AssetBundle;
 
 /**
- * Asset bundle for CheckboxX Theme. Includes assets from
- * bootstrap-checkbox-x plugin by Krajee.
+ * Asset bundle for Krajee flatblue theme used in [[CheckboxX]] widget. Includes assets from bootstrap-checkbox-x plugin
+ * by Krajee.
  *
  * @see http://plugins.krajee.com/checkbox-x
  * @see http://github.com/kartik-v/bootstrap-checkbox-x
