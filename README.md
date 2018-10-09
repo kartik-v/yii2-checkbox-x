@@ -1,7 +1,8 @@
 yii2-checkbox-x
 =================
 
-[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-checkbox-x/v/stable)](https://packagist.org/packages/kartik-v/yii2-checkbox-x)
+[![Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-checkbox-x/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-checkbox-x)
+[![Unstable Version](https://poser.pugx.org/kartik-v/yii2-widget-checkbox-x/v/unstable)](https://packagist.org/packages/kartik-v/yii2-widget-checkbox-x)
 [![License](https://poser.pugx.org/kartik-v/yii2-checkbox-x/license)](https://packagist.org/packages/kartik-v/yii2-checkbox-x)
 [![Total Downloads](https://poser.pugx.org/kartik-v/yii2-checkbox-x/downloads)](https://packagist.org/packages/kartik-v/yii2-checkbox-x)
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-checkbox-x/d/monthly)](https://packagist.org/packages/kartik-v/yii2-checkbox-x)
@@ -36,8 +37,8 @@ with any other markup.
 ### Demo
 You can see detailed [documentation and examples](http://demos.krajee.com/checkbox-x) on usage of the extension.
 
-### Latest Release
-The latest version of the extension is release v1.0.4. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-checkbox-x/blob/master/CHANGE.md) for details of various releases.
+### Release Changes
+Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-checkbox-x/blob/master/CHANGE.md) for details on changes to various releases.
 
 ## Installation
 
@@ -77,4 +78,4 @@ echo CheckboxX::widget([
 
 ## License
 
-**yii2-checkbox-x** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
+**yii2-checkbox-x** is released under the BSD-3-Clause License. See the bundled `LICENSE.md` for details.

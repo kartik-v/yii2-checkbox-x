@@ -21,12 +21,12 @@
         }
     ],
     "require": {
-        "kartik-v/yii2-krajee-base": "~1.7",
+        "kartik-v/yii2-krajee-base": ">=2.0.0",
         "kartik-v/bootstrap-checkbox-x": "~1.5"
     },
     "autoload": {
         "psr-4": {
-            "kartik\\checkbox\\": ""
+            "kartik\\checkbox\\": "src"
         }
     },
     "extra": {
