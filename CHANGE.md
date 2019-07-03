@@ -1,6 +1,10 @@
 Change Log: `yii2-checkbox-x`
 =============================
 
+## Version 1.0.5
+
+**Date**: _under development_
+
 ## Version 1.0.4
 
 **Date**: 09-Oct-2018
