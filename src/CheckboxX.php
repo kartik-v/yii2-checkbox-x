@@ -9,7 +9,6 @@
 
 namespace kartik\checkbox;
 
-use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
@@ -39,7 +38,6 @@ use kartik\base\InputWidget;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-
 class CheckboxX extends InputWidget
 {
     /**
@@ -102,23 +100,38 @@ class CheckboxX extends InputWidget
     /**
      * @inheritdoc
      */
-    public function init()
+    public function run()
     {
-        parent::init();
+        $this->initOptions();
         $this->registerAssets();
+        $this->renderWidget();
+    }
+
+    /**
+     * Initialize widget and plugin options
+     * @throws InvalidConfigException
+     */
+    protected function initOptions()
+    {
         if ($this->pluginLoading) {
             Html::addCssClass($this->options, 'cbx-loading');
         }
-        if ($this->initInputType !== self::INPUT_TEXT && $this->initInputType !== self::INPUT_CHECKBOX) {
-            throw new InvalidConfigException('The "initInputType" property must be one of "' . self::INPUT_TEXT . '" or "' . self::INPUT_CHECKBOX . '"');
+        $txt = self::INPUT_TEXT;
+        $cbx = self::INPUT_CHECKBOX;
+        if ($this->initInputType !== $txt && $this->initInputType !== $cbx) {
+            throw new InvalidConfigException("The 'initInputType' property must be one of '{$txt}' or '{$cbx}'.");
         }
-        $this->initMarkup();
+        if (empty($this->pluginOptions['iconChecked'])) {
+            $this->pluginOptions['iconChecked'] = $this->isBs4() ? '<i class="fas fa-check"></i>' :
+                '<i class="glyphicon glyphicon-ok"></i>';
+        }
+
     }
 
     /**
      * Initializes markup & styling for checkbox, label, and parses label positions.
      */
-    public function initMarkup()
+    public function renderWidget()
     {
         if (empty($this->labelSettings['label']) && !$this->autoLabel) {
             echo $this->getInput($this->initInputType);
