@@ -3,7 +3,7 @@ Change Log: `yii2-checkbox-x`
 
 ## Version 1.0.5
 
-**Date**: _under development_
+**Date**: 01-Sep-2021
 
 - (enh #16): Set more correct icon defaults for bootstrap 4.x.
 
