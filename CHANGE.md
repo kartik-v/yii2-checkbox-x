@@ -1,6 +1,12 @@
 Change Log: `yii2-checkbox-x`
 =============================
 
+## Version 1.0.6
+
+**Date**: 01-Sep-2021
+
+- (enh #17): Enhancements to support Bootstrap v5.x.
+
 ## Version 1.0.5
 
 **Date**: 01-Sep-2021
