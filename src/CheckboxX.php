@@ -3,8 +3,8 @@
 /**
  * @package   yii2-checkbox-x
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2021
- * @version   1.0.6
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2022
+ * @version   1.0.7
  */
 
 namespace kartik\checkbox;
@@ -19,9 +19,9 @@ use kartik\base\InputWidget;
  * [bootstrap-checkbox-x](http://plugins.krajee.com/checkbox-x) plugin by Krajee.
  * This widget allows three checkbox states and includes additional styles.
  *
- * Usage example:
+ * For example,
  *
- * ~~~
+ * ```php
  * use kartik\checkbox\CheckboxX;
  * echo CheckboxX::widget([
  *     'model' => $model,
@@ -31,29 +31,30 @@ use kartik\base\InputWidget;
  *         'size' => 'lg'
  *     ]
  * ]);
- * ~~~
+ * ```
  *
  * @see http://plugins.krajee.com/checkbox-x
  * @see http://github.com/kartik-v/bootstrap-checkbox-x
+ *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
- * @since 1.0
+ *
  */
 class CheckboxX extends InputWidget
 {
     /**
-     * Text input type
+     * @var string text input type
      */
     const INPUT_TEXT = 'textInput';
     /**
-     * Checkbox input type
+     * @var string checkbox input type
      */
     const INPUT_CHECKBOX = 'checkbox';
     /**
-     * Position label to the left of the checkbox
+     * @var string position label to the left of the checkbox
      */
     const LABEL_LEFT = 'left';
     /**
-     * Position label to the right of the checkbox
+     * @var string position label to the right of the checkbox
      */
     const LABEL_RIGHT = 'right';
 
@@ -65,7 +66,7 @@ class CheckboxX extends InputWidget
     public $initInputType = self::INPUT_TEXT;
 
     /**
-     * @var boolean automatically generate, style, and position labels with respect to the checkbox x. If this is
+     * @var boolean whether to automatically generate, style, and position labels with respect to the checkbox x. If this is
      * `true`, the labels will automatically be positioned and styled based on label settings. When this is set to
      * `true` and you have set the `model` and `attribute`, the label will be automatically generated. If you are not
      * using this with a model, then  you must set the property `labelSettings['label']` for automatic label styling
@@ -108,7 +109,9 @@ class CheckboxX extends InputWidget
     }
 
     /**
-     * Initialize widget and plugin options
+     * Initialize [[CheckboxX]] widget and the plugin options for
+     * [bootstrap-checkbox-x](http://plugins.krajee.com/checkbox-x).
+     *
      * @throws InvalidConfigException
      */
     protected function initOptions()

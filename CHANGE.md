@@ -1,6 +1,12 @@
 Change Log: `yii2-checkbox-x`
 =============================
 
+## Version 1.0.7
+
+**Date**: 10-Jan-2022
+
+- Enhance & standardize php docs for new website https://docs.krajee.com.
+
 ## Version 1.0.6
 
 **Date**: 01-Sep-2021
