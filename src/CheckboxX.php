@@ -125,7 +125,7 @@ class CheckboxX extends InputWidget
             throw new InvalidConfigException("The 'initInputType' property must be one of '{$txt}' or '{$cbx}'.");
         }
         if (empty($this->pluginOptions['iconChecked'])) {
-            $this->pluginOptions['iconChecked'] = $this->isBs(4) || $this->pluginOptions['iconChecked'] = isBS(5) ? '<i class="fas fa-check"></i>' :
+            $this->pluginOptions['iconChecked'] = = ($this->isBs(4) || $this->isBs(5)) ? '<i class="fas fa-check"></i>' :
                 '<i class="glyphicon glyphicon-ok"></i>';
         }
 
